@@ -88,6 +88,10 @@ $(document).ready(function() {
     $(".toppings").text(pizzaString);
     $(".price").text(totalPrice);
     $("#show-input").show();
+    document.querySelector("#show-input").scrollIntoView({behavior: 'smooth'});
+    $('.refresh').click(function(){
+  		location.reload();
+  	});
  
    
   });
