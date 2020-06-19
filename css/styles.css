@@ -1,5 +1,19 @@
-body {
+body{
   background-image: url('../images/burlap.jpg');
+}
+
+.headline {
+  background-color: #665847 ;
+  opacity : 0.8;
+}
+.restaurantName{
+  color : #FF9900;
+  font-size: 100px;
+  padding: 50px;
+}
+
+.jumbotron {
+  background-color: #665847;
 }
 
 #show-input{
@@ -7,7 +21,8 @@ body {
 }
 
 .card {
-  background-color: aquamarine;
+  background-color: #FEFFFD;
+  background
   border-style : solid;
   border-color : black;
   border-width : 2px;
@@ -19,4 +34,11 @@ body {
 
 .card-title {
   font-family: 'Itim', cursive;
+  margin: 15px;
+  color: #FF9900
+  
+}
+
+.btn {
+  background-color: ;
 }
