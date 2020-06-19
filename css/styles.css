@@ -1,3 +1,7 @@
+body {
+  background-image: url('../images/burlap.jpg');
+}
+
 #show-input{
   display : none;
 }
@@ -8,9 +12,11 @@
   border-color : black;
   border-width : 2px;
   border-radius : 5px;
+  padding : 40px;
+  margin : 20px;
   
 }
 
-.size{
-  margin : 20px;
+.card-title {
+  font-family: 'Itim', cursive;
 }

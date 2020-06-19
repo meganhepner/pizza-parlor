@@ -6,6 +6,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -18,7 +19,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-body">
-              <section class = "size">
+              <section class = "cardText">
                 <h3 class="card-title">How Hungry Are You?</h3>
                 <form id="userInput">
                   <div class="form-group">
@@ -57,9 +58,11 @@
                 </section>
               </div>
             </div>
+          </div>
+          <div class="col-md-6">
             <div class="card">
               <div class="card-body">
-                <section class = "size">
+                <section class = "cardText">
                   <h3 class="card-title">CRUST</h3>
                   <div class="form-group">
                     <div class="radio">
@@ -90,9 +93,13 @@
                 </section>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
             <div class="card">
               <div class="card-body">
-                <section class = "size">
+                <section class = "cardText">
                   <h3 class="card-title">SAUCE</h3>
                   <div class="form-group">
                     <div class="radio">
@@ -123,9 +130,11 @@
                 </section>
               </div>
             </div>
+          </div>
+          <div class="col-md-6">
             <div class="card">
               <div class="card-body">
-                <section class = "size">
+                <section class = "cardText">
                   <h3 class="card-title">TOPPINGS</h3>
                   <div class="form-group">
                     <input type="checkbox" name="pizza-toppings" value="mozzarella" class="0">Mozzarella<br>
@@ -140,8 +149,9 @@
               </div>
             </div>
             <button type="submit" class="btn-primary">Purchase</button>
-          </form>
-          <hr>
+            </form>
+            <hr>
+          </div>
         </div>
         <div class="col-md-6">
           <div id="show-input">
