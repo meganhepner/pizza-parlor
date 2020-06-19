@@ -9,54 +9,63 @@
   </head>
   <body>
     <div class="container">
-      <head class = jumbotron>
-      <h1>Rainer's Pies</h1>
-    </head>
-    <div class="row">
-      <div class="col-md-6">
-        <hr>
-        <form id="userInput">
-          <div class="form-group">
-              <label for="movie">Movie</label>
-              <select class="form-control" id="movie">
-                <option value="1">Blade Runner</option>
-                <option value="1">Star Wars</option>
-                <option value="0">Knives Out</option>
-                <option value="0">Tiger King</option>
-              </select>
-          </div>
-          <div class="form-group">
-            <label for="time">Time</label>
-            <select class="form-control" id="time">
-              <option value="1">3 pm</option>
-              <option value="1">5 pm </option>
-              <option value="0">7 pm </option>
-              <option value="0">10 pm</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="age">Age</label>
-            <select class="form-control" id="age">
-              <option value="1">Senior</option>
-              <option value="1">Child</option>
-              <option value="0">Regular</option>
-            </select>
-          </div>
-          <button type="submit" class="btn-primary">Purchase</button>
-        </form>
-        <hr>
+      <div class="jumbotron">
+        <head><h1>Rainer's Pies</h1></head>
       </div>
-      <div class="col-md-6">
-        <div id="show-input">
-          <p>Movie : <span class="movie"></span></p>
-          <p>Time : <span class="time"></span></p>
-          <p>Age : <span class="age"></span></p>
-          <p>Price : $<span class="price"></span></p>
-          <ul class="address"></ul>
-          <div id="buttons">
+      <div class="row">
+        <div class="col-md-6">
+          <hr>
+          <form id="userInput">
+            <div class="form-group">
+              <section class = "size">
+                <h3>What size are you having today?</h3>
+                <input type="checkbox" name="pizza-size" value="10"">Personal 10"<br>
+                <input type="checkbox" name="pizza-size" value="12"">Small 12"<br>
+                <input type="checkbox" name="pizza-size" value="16"">Medium 16"<br>
+                <input type="checkbox" name="pizza-size" value="20"">Large 20"<br>
+                <input type="checkbox" name="pizza-size" value="22"">Backpacker 22"<br>
+              </section>
+              <section class = "crust">
+                <h3>Which crust appeals?</h3>
+                <input type="checkbox" name="pizza-crust" value="chewy">Thick & Chewy<br>
+                <input type="checkbox" name="pizza-crust" value="thin">Thin and Crisp<br>
+                <input type="checkbox" name="pizza-crust" value="stuffed">Cheesy Inside<br>
+                <input type="checkbox" name="pizza-crust" value="keto">Cauliflower<br>
+              </section>
+              <section class = "sauce">
+                <h3>Choose a house made sauce!</h3>
+                <input type="checkbox" name="pizza-sauce" value="red">Crushed Tomato<br>
+                <input type="checkbox" name="pizza-sauce" value="white">Creamy Garlic<br>
+                <input type="checkbox" name="pizza-sauce" value="green">Pesto<br>
+                <input type="checkbox" name="pizza-sauce" value="bare">Olive Oil<br>
+              </section>
+              <section class = "topppings">
+                <h3>Select your toppings!</h3>
+                <input type="checkbox" name="pizza-toppings" value="mozzarella">Mozzarella<br>
+                <input type="checkbox" name="pizza-toppings" value="gorgonzola">Gorgonzola<br>
+                <input type="checkbox" name="pizza-toppings" value="peperoni">Pepperoni<br>
+                <input type="checkbox" name="pizza-toppings" value="spinach">Spinach<br>
+                <input type="checkbox" name="pizza-toppings" value="broccoli">Broccoli<br>
+                <input type="checkbox" name="pizza-toppings" value="artichoke">Artichoke<br>
+                <input type="checkbox" name="pizza-toppings" value="prosciutto">Prosciutto<br>
+              </section>
+            </div>
+            <button type="submit" class="btn-primary">Purchase</button>
+          </form>
+          <hr>
+        </div>
+        <di
+         class="col-md-6">
+          <div id="show-input">
+            <p>Movie : <span class="movie"></span></p>
+            <p>Time : <span class="time"></span></p>
+            <p>Age : <span class="age"></span></p>
+            <p>Price : $<span class="price"></span></p>
+            <ul class="address"></ul>
+            <div id="buttons">
+            </div>
           </div>
         </div>
-      </div>
     </div>
   </div>
     </div>
