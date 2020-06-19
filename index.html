@@ -9,118 +9,135 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
-        <head><h1>Rainer's Pies</h1></head>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Rainer's Pizza</h1>
+        </div>
       </div>
       <div class="row">
         <div class="col-md-6">
-          <hr>
-          <form id="userInput">
-            <div class="form-group">
+          <div class="card">
+            <div class="card-body">
               <section class = "size">
-                <h3>What size are you having today?</h3>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="pizza-size" value="10">
-                    Personal 10"
-                    <div id="price-10"></div>
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="pizza-size" value="12">
-                    Small 12"
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="pizza-size" value="16">
-                    Medium 16"
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="pizza-size" value="20">
-                    Large 20"
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="pizza-size" value="22">
-                    Backpacker 22"
-                  </label>
-                </div>
-              </section>
+                <h3 class="card-title">How Hungry Are You?</h3>
+                <form id="userInput">
+                  <div class="form-group">
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="pizza-size" value="10">
+                        Personal 10"
+                        <div id="price-10"></div>
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="pizza-size" value="12">
+                        Small 12"
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="pizza-size" value="16">
+                        Medium 16"
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="pizza-size" value="20">
+                        Large 20"
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="pizza-size" value="22">
+                        Backpacker 22"
+                      </label>
+                    </div>
+                  </div>
+                </section>
+              </div>
             </div>
-            <div class="form-group">
-              <section class = "crust">
-                <h3>Which crust appeals?</h3>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="pizza-crust" value="Thick & Chewy">
-                    Thick & Chewy
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="pizza-crust" value="Thin & Crisp">
-                    Thin & Crisp
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="pizza-crust" value="Cheesy Inside">
-                    Cheesy Inside
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="pizza-crust" value="Cauliflower">
-                    Cauliflower
-                  </label>
-                </div>
-              </section>
+            <div class="card">
+              <div class="card-body">
+                <section class = "size">
+                  <h3 class="card-title">CRUST</h3>
+                  <div class="form-group">
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="pizza-crust" value="Thick & Chewy">
+                        Thick & Chewy
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="pizza-crust" value="Thin & Crisp">
+                        Thin & Crisp
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="pizza-crust" value="Cheesy Inside">
+                        Cheesy Inside
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="pizza-crust" value="Cauliflower">
+                        Cauliflower
+                      </label>
+                    </div>
+                  </div>
+                </section>
+              </div>
             </div>
-            <div class="form-group">
-              <section class = "sauce">
-                <h3>Choose a house made sauce!</h3>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="pizza-sauce" value="Crushed Tomato">
-                    Crushed Tomato
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="pizza-sauce" value="Creamy Garlic">
-                    Creamy Garlic
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="pizza-sauce" value="Pesto">
-                    Pesto
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="pizza-sauce" value="Olive Oil">
-                    Olive Oil
-                  </label>
-                </div>
-              </section>
+            <div class="card">
+              <div class="card-body">
+                <section class = "size">
+                  <h3 class="card-title">SAUCE</h3>
+                  <div class="form-group">
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="pizza-sauce" value="Crushed Tomato">
+                        Crushed Tomato
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="pizza-sauce" value="Creamy Garlic">
+                        Creamy Garlic
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="pizza-sauce" value="Pesto">
+                        Pesto
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="pizza-sauce" value="Olive Oil">
+                        Olive Oil
+                      </label>
+                    </div>
+                  </div>
+                </section>
+              </div>
             </div>
-            <div class="form-group">
-              <section class = "topppings">
-                <h3>Select your toppings!</h3>
-                <input type="checkbox" name="pizza-toppings" value="mozzarella" class="0">Mozzarella<br>
-                <input type="checkbox" name="pizza-toppings" value="gorgonzola" class="2">Gorgonzola<br>
-                <input type="checkbox" name="pizza-toppings" value="pepperoni" class="1">Pepperoni<br>
-                <input type="checkbox" name="pizza-toppings" value="spinach" class="1">Spinach<br>
-                <input type="checkbox" name="pizza-toppings" value="broccoli" class="1">Broccoli<br>
-                <input type="checkbox" name="pizza-toppings" value="artichoke" class="2">Artichoke<br>
-                <input type="checkbox" name="pizza-toppings" value="prosciutto" class = "2">Prosciutto<br>
-              </section>
+            <div class="card">
+              <div class="card-body">
+                <section class = "size">
+                  <h3 class="card-title">TOPPINGS</h3>
+                  <div class="form-group">
+                    <input type="checkbox" name="pizza-toppings" value="mozzarella" class="0">Mozzarella<br>
+                    <input type="checkbox" name="pizza-toppings" value="gorgonzola" class="2">Gorgonzola<br>
+                    <input type="checkbox" name="pizza-toppings" value="pepperoni" class="1">Pepperoni<br>
+                    <input type="checkbox" name="pizza-toppings" value="spinach" class="1">Spinach<br>
+                    <input type="checkbox" name="pizza-toppings" value="broccoli" class="1">Broccoli<br>
+                    <input type="checkbox" name="pizza-toppings" value="artichoke" class="2">Artichoke<br>
+                    <input type="checkbox" name="pizza-toppings" value="prosciutto" class = "2">Prosciutto<br>
+                  </div>
+                </section>
+              </div>
             </div>
             <button type="submit" class="btn-primary">Purchase</button>
           </form>
