@@ -15,5 +15,12 @@ Pizza.prototype.pizzaPrice = function(ticketPrice, discountPrice){
 $(document).ready(function() {
   $("form#userInput").submit(function(event){ 
     event.preventDefault();
+    const size = $("input:radio[name=pizza-size]:checked").val();
+    const crust = $("input:radio[name=pizza-crust]:checked").val();
+    const sauce = $("input:radio[name=pizza-sauce]:checked").val();
+    $("input:checkbox[name=pizza-toppings]:checked").each(function() {
+      const toppings = $(this).val();
+      console.log(toppings);
+    });
   });
 });
