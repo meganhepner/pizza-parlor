@@ -7,49 +7,53 @@ function Pizza(size, crust, sauce, toppings){
 }
 
 Pizza.prototype.sizePrice = function(size){
-  let sizePrice = 0;
+  let sizeTotal = 0;
   if (size === "10"){
-    sizePrice = "8";
+    sizeTotal = "8";
   } else if (size === "12") {
-    sizePrice = "10";
+    sizeTotal = "10";
   } else if (size === "16") {
-    sizePrice = "14";   
+    sizeTotal = "14";   
   } else if (size === "20") {
-      sizePrice = "15";
+    sizeTotal = "15";
   } else if (size === "22") {
-      sizePrice = "16";
+    sizeTotal = "16";
   }
-  return(sizePrice);
+  return(sizeTotal);
 }
 
 Pizza.prototype.crustPrice = function(crust){
-  let crustPrice = 0;
+  let crustTotal = 0;
   if (crust === "chewy" || crust === "thin"){
-    crustPrice = "0";
+    crustTotal = "0";
   } else {
-    crustPrice = "2";
+    crustTotal = "2";
   }
-  return crustPrice;
+  return crustTotal;
 }
 
 Pizza.prototype.saucePrice = function(sauce){
-  let outputPrice = 0;
+  let sauceTotal = 0;
   if (sauce === "red" || sauce === "bare"){
-    saucePrice = "0";
+    sauceTotal = "0";
   } else {
-    saucePrice = "2";
+    sauceTotal = "2";
   }
-  console.log(saucePrice);
+  return sauceTotal;
 }
 
-Pizza.prototype.saucePrice = function(sauce){
-  let outputPrice = 0;
-  if (sauce === "red" || sauce === "bare"){
-    saucePrice = "0";
-  } else {
-    saucePrice = "2";
+function ToppingsPrice(allToppings){
+  let toppingsTotal = [];
+  for (i = 0; i <= allToppings.length; i++){
+    if (allToppings[i] === "mozzarella"){
+      toppingsTotal.push("0");
+    } else if (allToppings[i] === "pepperoni" || allToppings[i] === "spinach" || allToppings[i] === "broccoli") {
+      toppingsTotal.push("1");
+    } else if (allToppings[i] === "gorgonzola" || allToppings[i] === "prosciutto" || allToppings[i] === "artichoke"){
+      toppingsTotal.push("2");
+    }
   }
-  console.log(saucePrice);
+  console.log(toppingsTotal);
 }
 
 
@@ -60,17 +64,16 @@ $(document).ready(function() {
     const size = $("input:radio[name=pizza-size]:checked").val();
     const crust = $("input:radio[name=pizza-crust]:checked").val();
     const sauce = $("input:radio[name=pizza-sauce]:checked").val();
-    let toppings = [0];
+    let allToppings = [];
     $("input:checkbox[name=pizza-toppings]:checked").each(function() {
       const toppings = $(this).val();
-      toppings.push(pizza-toppings);
-      const 
+      allToppings.push(toppings);
     });
-    let pizza = new Pizza(size, crust, sauce, toppings);
+    let pizza = new Pizza(size, crust, sauce, allToppings);
     const sizePrice = pizza.sizePrice(size);
     const crustPrice = pizza.crustPrice(crust);
     const saucePrice = pizza.saucePrice(sauce);
-    const toppingsPrice = pizza.toppingsPrice(toppings);
+    ToppingsPrice(allToppings);
    
   });
 
