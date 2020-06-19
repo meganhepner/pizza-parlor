@@ -1,16 +1,12 @@
-FUNCTIONING CODE
+# _pizza parlor_
 
 
-
-# _shouting-machine_
-
-
-#### _starting out with forms, 6.3.20_
+#### _Working with Objects, 6.19.20_
 
 #### By _**Megan Hepner**_
 
 ## Description
-  This webpage experiments with creating a form, gathering the inputted sentence, and returning it to the user. When the sentence is returned it is written in all capital letters
+  This is a webpage for a Pizza Parlor! Customers choose the size and toppings for their pizza and are returned a price based upon their choices. 
 
 
 ## Setup/Installation Requirements
@@ -19,6 +15,13 @@ FUNCTIONING CODE
 * to clone this content, copy the url provided by the 'clone or download' button in GitHub
 * in terminal use the command 'git clone (GitHub url)'
 * open the content in a web browser
+
+### Specs
+| Spec | Input | Output |
+| :-------------     | :------------- | :------------- |
+| **User inputs their choices for size and toppings on pizza** | Large, mozzarella, spinach  | none |
+| **Pizza Object gathers variables** | Large, mozzarella, spinach  | Large, mozzarella, spinach |
+|**Function adds costs for add ons and totals price** | Large, mozzarella, spinach  | 20$ |
 
 ## Support and contact details
 
