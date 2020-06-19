@@ -6,8 +6,16 @@ function Pizza(size, crust, sauce, toppings){
   this.toppings = toppings
 }
 
-Pizza.prototype.sizePrice = function(crust){
+function Owner(price){
+  this.price = price
+ }
+
+
+
+Pizza.prototype.sizePrice = function(crust, price){
   let outputPrice = 0;
+  owner.price = [];
+  console.log(price);
   if (crust === "chewy" || crust === "thin"){
     crustPrice = "0";
   } else {
@@ -49,7 +57,7 @@ $(document).ready(function() {
   $("form#ownerInput").submit(function(event){ 
     event.preventDefault();
     const price = $("input:radio[name=pizza-price]:checked").val();
-    console.log(price);
+    let owner = new Owner(price);
 
   });
 });
