@@ -6,14 +6,11 @@ body{
   background-color: #665847 ;
   opacity : 0.8;
 }
+
 .restaurantName{
   color : #FF9900;
   font-size: 100px;
   padding: 50px;
-}
-
-.jumbotron {
-  background-color: #665847;
 }
 
 #show-input{
@@ -41,4 +38,8 @@ body{
 
 .btn {
   background-color: ;
+}
+
+.checkText{
+  margin : 5px;
 }

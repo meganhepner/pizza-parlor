@@ -1,4 +1,3 @@
-//Business Logic
 function Pizza(size, crust, sauce, allToppings){
   this.size = size,
   this.crust = crust,
@@ -90,10 +89,7 @@ $(document).ready(function() {
     $("#show-input").show();
     document.querySelector("#show-input").scrollIntoView({behavior: 'smooth'});
     $('.refresh').click(function(){
-  		location.reload();
-  	});
- 
-   
+      location.reload();
+    });
   });
-
 });
