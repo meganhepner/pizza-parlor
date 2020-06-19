@@ -57,9 +57,9 @@ Pizza.prototype.toppingsPrice = function(allToppings){
 }
 
 function addingMachine(sizePrice, crustPrice, saucePrice, toppingsPrice){
-  const reducer = (accumulator, currentValue) => accumulator + currentValue;
-  console.log(toppingsPrice.reduce(reducer));
-  pizzaTotal = (sizePrice + crustPrice + saucePrice + toppingsTotal)
+  const add = (accumulator, currentValue) => accumulator + currentValue;
+  toppingsPrice = (toppingsPrice.reduce(add));
+  pizzaTotal = (sizePrice + crustPrice + saucePrice + toppingsPrice)
   return pizzaTotal;
 }
   //UI Logic
@@ -80,6 +80,7 @@ $(document).ready(function() {
     const saucePrice = parseInt(pizza.saucePrice(sauce));
     const toppingsPrice = pizza.toppingsPrice(allToppings);
     const totalPrice = addingMachine(sizePrice, crustPrice, saucePrice, toppingsPrice);
+    console.log(totalPrice);
  
    
   });
