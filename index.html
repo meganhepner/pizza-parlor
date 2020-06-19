@@ -23,6 +23,7 @@
                   <label>
                     <input type="radio" name="pizza-size" value="10">
                     Personal 10"
+                    <div id="price-10"></div>
                   </label>
                 </div>
                 <div class="radio">
@@ -134,6 +135,40 @@
             <ul class="address"></ul>
             <div id="buttons"></div>
           </div>
+          <div class="row">
+            <div class="col-md-6">
+              <hr>
+              <form id="ownerInput">
+                <div class="form-group">
+                  <section class = "size">
+                    <h3>What size are you having today?</h3>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="pizza-price" value="2">
+                        2
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="pizza-price" value="0">
+                        0
+                      </label>
+                    </div>
+                  </section>
+                </div>
+                <button type="submit" class="btn-primary">Purchase</button>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <div id="show-input">
+                <p>Movie : <span class="movie"></span></p>
+                <p>Time : <span class="time"></span></p>
+                <p>Age : <span class="age"></span></p>
+                <p>Price : $<span class="price"></span></p>
+                <ul class="address"></ul>
+                <div id="buttons"></div>
+              </div>
+            </div>
         </div>
       </div>
     </div>
