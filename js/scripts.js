@@ -1,9 +1,9 @@
 //Business Logic
-function Pizza(size, crust, sauce, toppings){
+function Pizza(size, crust, sauce, allToppings){
   this.size = size,
   this.crust = crust,
   this.sauce = sauce,
-  this.toppings = toppings
+  this.allToppings = allToppings
 }
 
 Pizza.prototype.sizePrice = function(size){
@@ -42,21 +42,26 @@ Pizza.prototype.saucePrice = function(sauce){
   return sauceTotal;
 }
 
-function ToppingsPrice(allToppings){
+Pizza.prototype.toppingsPrice = function(allToppings){
   let toppingsTotal = [];
   for (i = 0; i <= allToppings.length; i++){
     if (allToppings[i] === "mozzarella"){
-      toppingsTotal.push("0");
+      toppingsTotal.push(0);
     } else if (allToppings[i] === "pepperoni" || allToppings[i] === "spinach" || allToppings[i] === "broccoli") {
-      toppingsTotal.push("1");
+      toppingsTotal.push(1);
     } else if (allToppings[i] === "gorgonzola" || allToppings[i] === "prosciutto" || allToppings[i] === "artichoke"){
-      toppingsTotal.push("2");
+      toppingsTotal.push(2);
     }
   }
-  console.log(toppingsTotal);
+  return toppingsTotal;
 }
 
-
+function addingMachine(sizePrice, crustPrice, saucePrice, toppingsPrice){
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+  console.log(toppingsPrice.reduce(reducer));
+  pizzaTotal = (sizePrice + crustPrice + saucePrice + toppingsTotal)
+  return pizzaTotal;
+}
   //UI Logic
 $(document).ready(function() {
   $("form#userInput").submit(function(event){ 
@@ -64,16 +69,18 @@ $(document).ready(function() {
     const size = $("input:radio[name=pizza-size]:checked").val();
     const crust = $("input:radio[name=pizza-crust]:checked").val();
     const sauce = $("input:radio[name=pizza-sauce]:checked").val();
-    let allToppings = [];
+    const allToppings = [];
     $("input:checkbox[name=pizza-toppings]:checked").each(function() {
       const toppings = $(this).val();
       allToppings.push(toppings);
     });
     let pizza = new Pizza(size, crust, sauce, allToppings);
-    const sizePrice = pizza.sizePrice(size);
-    const crustPrice = pizza.crustPrice(crust);
-    const saucePrice = pizza.saucePrice(sauce);
-    ToppingsPrice(allToppings);
+    const sizePrice = parseInt(pizza.sizePrice(size));
+    const crustPrice = parseInt(pizza.crustPrice(crust));
+    const saucePrice = parseInt(pizza.saucePrice(sauce));
+    const toppingsPrice = pizza.toppingsPrice(allToppings);
+    const totalPrice = addingMachine(sizePrice, crustPrice, saucePrice, toppingsPrice);
+ 
    
   });
 
