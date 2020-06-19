@@ -24,7 +24,7 @@ Pizza.prototype.sizePrice = function(size){
 
 Pizza.prototype.crustPrice = function(crust){
   let crustTotal = 0;
-  if (crust === "chewy" || crust === "thin"){
+  if (crust === "Thick & Chewy" || crust === "Thin & Crisp"){
     crustTotal = "0";
   } else {
     crustTotal = "2";
@@ -34,7 +34,7 @@ Pizza.prototype.crustPrice = function(crust){
 
 Pizza.prototype.saucePrice = function(sauce){
   let sauceTotal = 0;
-  if (sauce === "red" || sauce === "bare"){
+  if (sauce === "Crushed Tomato" || sauce === "Olive Oil"){
     sauceTotal = "0";
   } else {
     sauceTotal = "2";
@@ -62,6 +62,7 @@ function addingMachine(sizePrice, crustPrice, saucePrice, toppingsPrice){
   pizzaTotal = (sizePrice + crustPrice + saucePrice + toppingsPrice)
   return pizzaTotal;
 }
+
   //UI Logic
 $(document).ready(function() {
   $("form#userInput").submit(function(event){ 
@@ -80,7 +81,13 @@ $(document).ready(function() {
     const saucePrice = parseInt(pizza.saucePrice(sauce));
     const toppingsPrice = pizza.toppingsPrice(allToppings);
     const totalPrice = addingMachine(sizePrice, crustPrice, saucePrice, toppingsPrice);
-    console.log(totalPrice);
+    $(".size").text(pizza.size);
+    $(".crust").text(pizza.crust);
+    $(".sauce").text(pizza.sauce);
+    pizzaString = String(pizza.allToppings);
+    $(".toppings").text(pizzaString);
+    $(".price").text(totalPrice);
+    $("#show-input").show();
  
    
   });
